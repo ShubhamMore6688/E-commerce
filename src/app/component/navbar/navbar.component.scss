@@ -1,0 +1,181 @@
+// .first{
+//     background-color: orange;
+//     height: 30px;
+// }
+
+// .second {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 30px;
+
+//     input{
+//         width: 50px;
+//         height:10px ;
+//     }
+    
+// }
+
+
+
+
+
+
+
+
+
+
+/* Default styles */
+// .container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 20px;
+//     background-color: #f0f0f0;
+// }
+
+.first {
+    // flex: 1;
+    background-color: #ff6600;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    .contact{
+        display: flex;
+
+        div{
+            margin: 20px;
+
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+    .space{
+        width: 250px;
+    }
+    .location{
+        display: flex;
+        align-items: center;
+        // width: 100px;
+        div{
+            margin: 20px;
+
+            i{
+                margin-right: 10px;
+            }
+        }
+
+        
+
+        select {
+           
+            border: none;
+            padding: 0.5em;
+            font-size: 1em;
+            background-color: #ff6600   ;
+            width: 150px;
+            margin: 0;
+            color: white;
+            // padding: 0; 
+            
+           
+          }
+    }
+
+    
+}
+
+#language {
+    width: 95px;
+  }
+
+.second {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+
+    h1 {
+        margin: 0;
+    }
+
+    input[type="text"]{
+        width: 600px; /* Example width */
+        height: 30px; /* Example height */
+        border-radius: 5px;
+        margin-left: 10px;
+        padding: 5px 10px;
+        border-style: none;
+        background-color: #e9e7e7;
+        font-size: 15px;
+        // border: 1px solid #ccc;
+    }
+    .btn {
+        margin-left: 10px;
+        width: 150px;
+        height: 30px; /* Example height */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 5px;
+        padding: 8px 16px;
+        background-color: #ff6600;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        i{
+            font-size: 25px;
+        }
+
+        
+    }
+
+    .title{
+        display: flex;
+        align-items: center;
+        i{
+            margin-right: 5px;
+            font-size: 30px;
+            color:#ff6600 ;
+        }
+    }
+
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        height: 30px;
+        i{
+            font-size: 25px;
+            margin-right: 10px;
+        }
+    }
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .first,
+    .second {
+        width: 100%;
+    }
+
+    .second {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    input[type="text"],
+    button {
+        margin: 5px 0;
+    }
+}
+
