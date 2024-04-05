@@ -1,14 +1,6 @@
-<!-- <div class="card">
-    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1632456610000" alt="Apple iPhone 13 Pro" class="product-image">
-    <h3 class="product-name">Apple iPhone 13 Pro</h3>
-    <p class="product-price">$999</p>
-    <p class="availability">In stock (5 items left)</p>
-    <p>Brand: Apple</p>
-    <p>Category: Smartphones</p>
-    <p><a href="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1632456610000" target="_blank">View details</a></p>
-</div> -->
 
-<div class="product">
+
+<!-- <div class="product">
     <div class="left">
         <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1632456610000" alt="Apple iPhone 13 Pro" class="product-image">
     </div>
@@ -16,4 +8,18 @@
         <h3 class="product-name">Apple iPhone 13 Pro</h3>
         <p class="product-price">$999</p>
     </div>
-</div>
+</div> -->
+
+
+
+    <div class="product-card">
+      <div class="product-image">
+        <img [src]="product.imageURL" alt="{{ product.name }}">
+      </div>
+      <div class="product-details">
+        <h3 class="product-name">{{ product.name }}</h3>
+        <p class="product-price">{{ "$" + product.price }}</p>
+      </div>
+    </div>
+ 
+  

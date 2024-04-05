@@ -1,60 +1,80 @@
-// .card {
-//     border: 1px solid #ccc;
-//     border-radius: 8px;
-//     padding: 16px;
-//     max-width: 300px;
-//     margin: 0 auto;
-//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-// }
-// .product-image {
-//     max-width: 100%;
-//     height: auto;
-//     border-radius: 4px;
-// }
-// .product-name {
-//     font-weight: bold;
-//     margin-top: 8px;
-// }
-// .product-price {
-//     color: #007bff;
-//     font-size: 18px;
-// }
-// .availability {
-//     color: green;
-// }
 
-.product{
-    display: flex;
-    .left{
-        height: 120px;
-        width: 105px;
-        overflow: hidden;
+
+// .product{
+//     display: flex;
+//     background-color: #e9e7e7;
+//     position: absolute;
+//     .left{
+//         height: 120px;
+//         width: 105px;
+//         overflow: hidden;
+//         border-radius: 10px; 
         
-        
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+//         img{
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
             
-        }
-    }
+//         }
+//     }
 
-    .right{
-        height: 120px;
-        width: 105px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        // align-items: center;
+//     .right{
+//         height: 120px;
+//         width: 105px;
+//         overflow: hidden;
+//         display: flex;
+//         justify-content: center;
+//         margin-left: 10px;
+//         // align-items: center;
         
-        flex-direction: column;
-        h3{
-            font-size: 15px;
-        }
-        p{
-            font-size: 12px;
-            margin-top: 10px;
-            color: #ff6600;
-        }
-    }
+//         flex-direction: column;
+//         h3{
+//             font-size: 15px;
+//         }
+//         p{
+//             font-size: 12px;
+//             margin-top: 10px;
+//             color: #ff6600;
+//         }
+//     }
+// }
+
+
+  
+.product-card {
+    display: flex;
+    width: 190px; /* Set width as per your requirement */
+    background-color: #d3cece; /* Add border for the card */
+    border-radius: 10px; /* Add border radius to the card */
 }
+
+.product-image {
+    width: 210px; /* Set width of the image div */
+    overflow: hidden; 
+    border-radius: 10px;/* Hide overflow content */
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px; /* Add border radius to top left corner */
+    border-bottom-left-radius: 10px; /* Add border radius to bottom left corner */
+}
+
+.product-details {
+    flex-grow: 1; /* Allow this div to grow and fill the remaining space */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.product-details h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.product-details p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #ff6600;
+}
+
