@@ -1,0 +1,86 @@
+.flash{
+    height: 150px;
+    background-color: #ff6600;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 68px;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.first{
+    width: 30%;
+    color: #fff;
+    h2{
+        font-size: 30px;
+    }
+    p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    
+}
+.right{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    
+}
+
+.second{
+    height: 110px;
+    background-color: #fff;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.third{
+    height: 110px;
+    background-color: #fff;
+    width: 250px;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+.product-card {
+    display: flex;
+    width: 190px; /* Set width as per your requirement */
+    background-color: #d3cece; /* Add border for the card */
+    border-radius: 10px; /* Add border radius to the card */
+}
+
+.product-image {
+    width: 210px; /* Set width of the image div */
+    overflow: hidden; 
+    border-radius: 10px;/* Hide overflow content */
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px; /* Add border radius to top left corner */
+    border-bottom-left-radius: 10px; /* Add border radius to bottom left corner */
+}
+
+.product-details {
+    flex-grow: 1; /* Allow this div to grow and fill the remaining space */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.product-details h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.product-details p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #ff6600;
+}
